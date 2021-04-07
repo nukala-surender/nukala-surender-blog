@@ -1,0 +1,18 @@
+{
+  "title": "Nukala Surendhar",
+  "author": "Nukala Surendhar",
+  "headerTitle": "nukala-surender",
+  "description": "A blog created with Next.js and Tailwind.css",
+  "language": "en-us",
+  "siteUrl": "https://tailwind-nextjs-starter-blog.vercel.app",
+  "siteRepo": "https://github.com/timlrx/tailwind-nextjs-starter-blog",
+  "image": "/static/images/photo.JPG",
+  "socialBanner": "/static/images/twitter-card.png",
+  "email": "nukala.surender2108@gmail.com",
+  "github": "https://github.com/nukala-surender",
+  "twitter": "https://twitter.com/Twitter",
+  "facebook": "https://facebook.com",
+  "youtube": "https://youtube.com",
+  "linkedin": "https://www.linkedin.com/in/surender-nukala-6297b64b/",
+  "locale": "en-US"
+}
