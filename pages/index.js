@@ -2,6 +2,7 @@ import Link from '@/components/Link'
 import { PageSeo } from '@/components/SEO'
 import Tag from '@/components/Tag'
 import siteMetadata from '@/data/siteMetadata'
+import projectsData from '@/data/workExperience'
 import { getAllFilesFrontMatter } from '@/lib/mdx'
 
 const MAX_DISPLAY = 5
@@ -17,13 +18,13 @@ export default function Home({ posts }) {
   return (
     <>
       <PageSeo
-        title={siteMetadata.title}
+        title={`Home - ${siteMetadata.author}`}
         description={siteMetadata.description}
         url={siteMetadata.siteUrl}
       />
       <div className="divide-y divide-gray-200 dark:divide-gray-700">
         <div className="pt-6 pb-8 space-y-2 md:space-y-5 text-center">
-          <div className="flex flex-col items-center justify-center p-6 mx-4 space-y-4 border-2 shadow-xl bg-indigo-100 rounded-lg">
+          <div className="flex flex-col items-center justify-center p-6 mx-4 space-y-4 border-2 shadow-xl dark:bg-gray-600 bg-indigo-100 rounded-lg">
               <h1 className="text-2xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14">
                 Hey, I'm Surendhar
               </h1>
@@ -31,12 +32,29 @@ export default function Home({ posts }) {
           </div>
         </div>
         <div className="pt-6 pb-8 space-y-2 md:space-y-5">
-          <div className="flex flex-col justify-center p-6 mx-4 space-y-4">
-              <p className="text-3xl font-extrabold">Projects</p>
-              <p className="text-xl">Full stack developer with experience in Java, Spring boot, Angular, NextJS, AWS, PCF</p>
-          </div>
+            <p className="text-3xl font-extrabold">Career</p>
+            <div className="p-4 border-2 rounded-lg hover:shadow-xl">
+              <h1 className="text-2xl font-bold">JP Morgan Chase & Co</h1>
+              <p>Full Stack Developer | <em>July 2013 - Present</em></p><br/>
+              <p className="">I have hands on experience in design and development of enterprise web applications with Spring boot,
+                Angular, Pivotal Cloud Foundry.</p>
 
+            </div>
         </div>
+        <div className="pt-6 pb-8 space-y-2 md:space-y-5">
+            <p className="text-3xl font-extrabold">Projects</p>
+            {projectsData.map((d) => (
+              <div className="p-4 border-2 rounded-lg hover:shadow-xl">
+                <h1 className="text-2xl font-bold">{d.title} <span className="text-sm text-gray-500">{d.type}</span></h1>
+                <p>Full Stack Developer | <em>July 2013 - Present</em></p><br/>
+                <p className="">I have hands on experience in design and development of enterprise web applications with Spring boot,
+                  Angular, Pivotal Cloud Foundry.</p>
+
+              </div>
+            ))}
+        </div>
+
+
         <div className="pt-6 pb-8 space-y-2 md:space-y-5">
           <h1 className="text-2xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14">
             Latest
@@ -89,7 +107,7 @@ export default function Home({ posts }) {
                           aria-label={`Read "${title}"`}
                         >
                           Read more &rarr;
-                        </Link>
+                         </Link>
                       </div>
                     </div>
                   </div>
