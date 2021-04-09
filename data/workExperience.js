@@ -3,8 +3,9 @@ const workExperience = [
     title: 'Internal Control Self Check (ICSC)',
     type: 'Professional',
     technologies: ['Spring boot', 'Angular', 'Microservices', 'PCF', 'Hibernate', 'Oracle'],
-    description: `ICSC is a web based tool for bankers; built upon paper based version to provide information required for regulators. It monitors progress against the controls with aggregated /systematic reporting on completion rates, trends and issues.
-      Admin module – where admin can create checklist items(controls)
+    description: `ICSC is a web based tool for bankers; built upon paper based version to provide information required for regulators.
+      It monitors progress against the controls with aggregated /systematic reporting on completion rates, trends and issues.`,
+    details: `Admin module – where admin can create checklist items(controls)
       ICSC module – where users can update status, create follow-ups, complete items
       Reporting module – reports generated for all users to view status at various levels(region/market/branch)`,
 

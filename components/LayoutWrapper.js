@@ -15,10 +15,12 @@ const LayoutWrapper = ({ children }) => {
           <div>
             <Link href="/" aria-label="Nukala Surendhar">
               <div className="flex items-center justify-between">
-
+                <div className="mr-3">
+                  <Logo />
+                </div>
                 {typeof siteMetadata.headerTitle === 'string' ? (
                   <div className="hidden h-6 text-2xl font-semibold sm:block">
-                    { ` $ cd / home/ ` } <span className="text-red-600"></span>
+                  {siteMetadata.headerTitle}
                   </div>
                 ) : (
                   siteMetadata.headerTitle
