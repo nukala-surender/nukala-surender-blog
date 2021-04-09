@@ -1,6 +1,6 @@
 {
-  "name": "tailwind-nextjs-starter-blog",
-  "version": "0.2.0",
+  "name": "surender-blog",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
     "start": "next-remote-watch ./data",
@@ -61,9 +61,7 @@
     "unist-util-visit": "2.0.3"
   },
   "husky": {
-    "hooks": {
-      
-    }
+    "hooks": {}
   },
   "lint-staged": {
     "*.+(js|jsx|ts|tsx)": [
